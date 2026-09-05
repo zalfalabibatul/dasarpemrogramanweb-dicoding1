@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechBlog - Dunia Teknologi & Pemrograman</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-icon">&#9741;</span>
+                <h1>TechBlog</h1>
+            </div>
+            <p class="tagline">Eksplorasi Dunia Teknologi &amp; Pemrograman</p>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <ul>
+            <li><a href="#beranda" data-page="beranda" onclick="navigateTo('beranda'); return false;">Beranda</a></li>
+            <li><a href="#artikel" data-page="artikel" onclick="navigateTo('artikel'); return false;">Artikel</a></li>
+            <li><a href="#tentang" data-page="tentang" onclick="navigateTo('tentang'); return false;">Tentang</a></li>
+            <li>
+                <a href="https://www.dicoding.com/users/zalfa_labibatul_m/academies" target="_blank" rel="noopener noreferrer" class="nav-dicoding">Profil Dicoding</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- DYNAMIC PAGE WRAPPER -->
+    <div id="page-content">
+
+        <!-- Halaman Beranda (default, disembunyikan JS saat pindah halaman) -->
+        <div id="view-beranda" class="page-view"></div>
+
+        <!-- Halaman Tentang -->
+        <div id="view-tentang" class="page-view" style="display:none"></div>
+
+        <!-- Halaman Artikel — struktur statis dengan main, article, aside -->
+        <div id="view-artikel" class="page-view" style="display:none">
+            <main>
+                <article id="article-content">
+                    <!-- diisi JS -->
+                </article>
+
+                <aside>
+                    <!-- Gambar profil penulis (elemen img statis di aside) -->
+                    <div class="aside-card profile-card">
+                        <img src="images/profile.jpg" alt="Foto Profil Penulis" class="profile-photo" />
+                        <h3>Zalfa Labibatul Marzuqoh</h3>
+                        <p class="profile-title">Frontend Developer &amp; Tech Writer</p>
+                        <p class="profile-bio">
+                            Passionate tentang web development, UI/UX design, dan berbagi ilmu seputar teknologi kepada komunitas.
+                        </p>
+                        <div class="profile-stats">
+                            <div class="stat"><span class="stat-number">1</span><span class="stat-label">Artikel</span></div>
+                            <div class="stat"><span class="stat-number">1,2K</span><span class="stat-label">Pembaca</span></div>
+                            <div class="stat"><span class="stat-number">6 bln</span><span class="stat-label">Pengalaman</span></div>
+                        </div>
+                        <a href="https://www.dicoding.com/users/zalfa_labibatul_m/academies" target="_blank" rel="noopener noreferrer" class="btn-dicoding">Lihat Profil Dicoding</a>
+                    </div>
+
+                    <div class="aside-card" id="aside-related">
+                        <!-- diisi JS -->
+                    </div>
+
+                    <div class="aside-card" id="aside-topics">
+                        <!-- diisi JS -->
+                    </div>
+                </aside>
+            </main>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>TechBlog</h4>
+                <p>Platform berbagi pengetahuan seputar teknologi dan pemrograman untuk para developer Indonesia.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Tautan</h4>
+                <ul>
+                    <li><a href="#beranda" onclick="navigateTo('beranda'); return false;">Beranda</a></li>
+                    <li><a href="#artikel" onclick="navigateTo('artikel'); return false;">Artikel</a></li>
+                    <li><a href="#tentang" onclick="navigateTo('tentang'); return false;">Tentang</a></li>
+                    <li><a href="https://www.dicoding.com/users/zalfa_labibatul_m/academies" target="_blank" rel="noopener noreferrer">Profil Dicoding</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontak</h4>
+                <ul>
+                    <li>zalfalabibatulmarzuqoh@gmail.com</li>
+                    <li>Tegal, Indonesia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechBlog. Dibuat untuk komunitas developer Indonesia.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/navigation.js"></script>
+</body>
+
+</html>
